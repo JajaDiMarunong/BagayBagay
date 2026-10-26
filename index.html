@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bagay-Bagay | Give, trade, and share used goods with your community</title>
+<meta name="description" content="Bagay-Bagay is a community app where neighbors give away or trade their used goods.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <a href="#top" class="brand"><img src="assets/logo.png" alt="" width="44" height="44"><span>Bagay-Bagay</span></a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  <nav id="menu">
+    <a href="#how">How it works</a>
+    <a href="#browse">Browse items</a>
+    <a href="#community">Community</a>
+    <a href="#faq">FAQ</a>
+    <button class="btn btn-small" data-open="join">Join free</button>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-text">
+    <p class="pill">Made for neighbors</p>
+    <h1>Your old stuff is someone’s <span class="swap" id="swap">treasure</span>.</h1>
+    <p class="lead">Bagay-Bagay lets your community give away or trade used goods. Declutter your home, find what you need, and meet people nearby.</p>
+    <div class="cta">
+      <button class="btn" data-open="join">Start sharing</button>
+      <a class="btn btn-ghost" href="#browse">See what’s available</a>
+    </div>
+    <p class="note">Free to join. No selling, no haggling.</p>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="ring"></div>
+    <img src="assets/logo.png" alt="" class="hero-logo">
+    <span class="float f1">🧥</span><span class="float f2">📚</span><span class="float f3">🪴</span><span class="float f4">🍳</span>
+  </div>
+</section>
+
+<section class="strip" aria-label="Community numbers">
+  <div><b data-count="12400">0</b><span>items shared</span></div>
+  <div><b data-count="3200">0</b><span>neighbors</span></div>
+  <div><b data-count="48">0</b><span>barangays</span></div>
+  <div><b data-count="9">0</b><span>tons kept from landfill</span></div>
+</section>
+
+<section class="section" id="how">
+  <h2>Three steps from clutter to community</h2>
+  <div class="steps">
+    <article class="step"><span class="num">1</span><h3>Post what you have</h3><p>Snap a photo, add a short description, and choose: <em>give away</em> or <em>trade</em>.</p></article>
+    <article class="step"><span class="num">2</span><h3>Connect with a neighbor</h3><p>People nearby send a request or offer an item of their own. Chat to agree.</p></article>
+    <article class="step"><span class="num">3</span><h3>Meet and hand it over</h3><p>Pick a safe public spot, exchange, and leave a thank-you note.</p></article>
+  </div>
+</section>
+
+<section class="section alt" id="browse">
+  <h2>Fresh from your neighborhood</h2>
+  <div class="tabs" role="tablist">
+    <button class="tab on" data-filter="all">All</button>
+    <button class="tab" data-filter="give">Give away</button>
+    <button class="tab" data-filter="trade">Trade</button>
+  </div>
+  <div class="grid" id="grid"></div>
+  <p class="center"><button class="btn btn-ghost" data-open="join">Sign up to see more</button></p>
+</section>
+
+<section class="section" id="community">
+  <h2>Why sharing beats throwing away</h2>
+  <div class="why">
+    <div class="why-card"><h3>Give</h3><p>Pass things on for free to someone who’ll use them. No payment, just kindness.</p></div>
+    <div class="why-card"><h3>Trade</h3><p>Swap a rice cooker for a bike helmet. Name what you’d like in return.</p></div>
+    <div class="why-card"><h3>Reuse</h3><p>Every item that finds a new home is one less in the trash.</p></div>
+  </div>
+  <blockquote class="quote" id="quote">
+    <p id="qtext"></p><cite id="qwho"></cite>
+    <div class="dots" id="dots"></div>
+  </blockquote>
+</section>
+
+<section class="section alt" id="faq">
+  <h2>Questions, answered</h2>
+  <div class="faq">
+    <details><summary>Is Bagay-Bagay really free?</summary><p>Yes. Posting, requesting, and trading cost nothing. Selling isn’t allowed, so everyone stays on equal footing.</p></details>
+    <details><summary>How do I stay safe when meeting someone?</summary><p>Meet in public places like barangay halls or plazas, bring a friend if you can, and read each member’s profile and past thank-you notes first.</p></details>
+    <details><summary>What can I post?</summary><p>Clothes, books, appliances, toys, furniture, kitchenware, and more. Items must be clean, working, and legal to share.</p></details>
+    <details><summary>When will the app be available?</summary><p>We’re building it now. Join the waitlist and we’ll email you when your community opens.</p></details>
+  </div>
+</section>
+
+<section class="cta-band">
+  <h2>Ready to make something bagay again?</h2>
+  <p>Join the waitlist and be first in your community.</p>
+  <button class="btn btn-light" data-open="join">Join the waitlist</button>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="brand"><img src="assets/logo.png" alt="" width="40" height="40"><span>Bagay-Bagay</span></div>
+  <nav>
+    <a href="#how">How it works</a><a href="#browse">Browse</a><a href="#community">Community</a><a href="#faq">FAQ</a>
+    <a href="#" data-toast="Privacy page coming soon">Privacy</a><a href="#" data-toast="Terms page coming soon">Terms</a>
+  </nav>
+  <p>© <span id="yr"></span> Bagay-Bagay. Share more, waste less.</p>
+</footer>
+
+<button class="totop" id="totop" aria-label="Back to top">↑</button>
+
+<div class="modal" id="join" role="dialog" aria-modal="true" aria-labelledby="jt" hidden>
+  <div class="sheet">
+    <button class="x" data-close aria-label="Close">×</button>
+    <h3 id="jt">Join Bagay-Bagay</h3>
+    <p>We’ll let you know the moment your community opens.</p>
+    <form id="form" novalidate>
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>I want to<select name="goal"><option>Give things away</option><option>Trade things</option><option>Do both</option></select></label>
+      <p class="err" id="err" role="alert"></p>
+      <button class="btn" type="submit">Join the waitlist</button>
+    </form>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
