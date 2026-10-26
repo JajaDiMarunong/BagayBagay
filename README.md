@@ -6,9 +6,9 @@ Landing page for Bagay-Bagay, a community app where neighbors give away or trade
 
 ```
 index.html
-css/styles.css
-js/main.js
-assets/logo.png
+styles.css
+main.js
+logo.png
 ```
 
 ## Run locally
@@ -25,7 +25,7 @@ Open `index.html` in a browser. No build step needed.
 ## What works now
 
 - Sticky navigation with smooth scrolling, active-section highlight, and mobile menu
-- Browse items with Give away / Trade filters (sample data in `js/main.js`)
+- Browse items with Give away / Trade filters (sample data in `main.js`)
 - Waitlist modal with form validation (front-end only; connect it to a backend later)
 - Count-up stats, rotating testimonials, FAQ accordion, back-to-top button
 

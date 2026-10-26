@@ -132,9 +132,10 @@
     modal.hidden = false;
     err.textContent = '';
     if (msg) toast(msg);
-    setTimeout(() => $('input', modal).focus(), 50);
+    document.body.style.overflow = 'hidden';
+    if (innerWidth > 600) setTimeout(() => $('input', modal).focus(), 50);
   }
-  const closeModal = () => { modal.hidden = true; lastFocus && lastFocus.focus(); };
+  const closeModal = () => { modal.hidden = true; document.body.style.overflow = ''; lastFocus && lastFocus.focus(); };
   $$('[data-open]').forEach(b => b.addEventListener('click', () => { setMenu(false); openModal(b.dataset.open); }));
   $$('[data-close]').forEach(b => b.addEventListener('click', closeModal));
   modal.addEventListener('click', e => e.target === modal && closeModal());
